@@ -7,6 +7,16 @@ Includes **stacked ensemble models**, **heuristic filters**, **URL reputation AP
 ## 📸 Project Preview
 
 ### 🖼️ Phishing Awareness Images
+## 📸 Project Preview
+
+### 🛡️ Phishing Attack Model  
+![Phishing Attack Model](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Phishing_attack_diagram.svg/1280px-Phishing_attack_diagram.svg.png)
+
+### 🌐 URL Structure Used for Feature Engineering  
+![URL Structure](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/URL_syntax_diagram.svg/1920px-URL_syntax_diagram.svg.png)
+
+
+
 
 ![Phishing Attack model image](https://www.fortinet.com/resources/cyberglossary/types-of-phishing-attacks)
 ### 🌐 URL Structure Used for Feature Engineering
