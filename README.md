@@ -10,7 +10,7 @@ Includes **stacked ensemble models**, **heuristic filters**, **URL reputation AP
 ## 📸 Project Preview
 
 ### 🛡️ Phishing Attack Model  
-![Phishing Attack Model](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Phishing_attack_diagram.svg/1280px-Phishing_attack_diagram.svg.png)
+![Phishing Attack Model](https://media.licdn.com/dms/image/v2/D4E12AQFiO1RzI19XNg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1696956399897?e=2147483647&v=beta&t=TEhMHph5-Tor2L8m9ZVk5_3Ay5wq3KvqqUGKq1ccBdQ)
 
 ### 🌐 URL Structure Used for Feature Engineering  
 ![URL Structure](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/URL_syntax_diagram.svg/1920px-URL_syntax_diagram.svg.png)
