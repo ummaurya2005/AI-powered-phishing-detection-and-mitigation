@@ -13,7 +13,7 @@ Includes **stacked ensemble models**, **heuristic filters**, **URL reputation AP
 ![Phishing Attack Model](https://media.licdn.com/dms/image/v2/D4E12AQFiO1RzI19XNg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1696956399897?e=2147483647&v=beta&t=TEhMHph5-Tor2L8m9ZVk5_3Ay5wq3KvqqUGKq1ccBdQ)
 
 ### 🌐 URL Structure Used for Feature Engineering  
-![URL Structure](https://www.researchgate.net/profile/Ram-Basnet/publication/273302231/figure/fig1/AS:294940446871554@1447330690186/Overview-of-phishing-URL-detection-framework.png)
+![URL Structure](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-024-74725-6/MediaObjects/41598_2024_74725_Fig1_HTML.png)
 
 
 
