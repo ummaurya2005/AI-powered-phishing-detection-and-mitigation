@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>⚠️ Suspicious URL Warning</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container fade-in">
+
+    <div class="warning-header shake">
+        ⚠️ Suspicious URL Detected!
+    </div>
+
+    <p class="subtext">Our system flagged this URL as potentially malicious.  
+    Please review before taking action.</p>
+
+    <div class="alert alert-warning">
+        <b>URL:</b> {{ result.url }} <br>
+        <b>Prediction:</b> {{ result.predicted_class }} <br>
+        <b>Confidence:</b> {{ (result.confidence * 100) | round(2) }}%
+    </div>
+
+    <h3>Do you want to block this URL?</h3>
+
+    <form action="/confirm_block" method="POST">
+        <input type="hidden" name="url" value="{{ result.url }}">
+        <button class="btn-danger full-btn">🚫 Block & Add to Blacklist</button>
+    </form>
+
+    <form action="/confirm_allow" method="POST">
+        <input type="hidden" name="url" value="{{ result.url }}">
+        <button class="btn-safe full-btn">✔ Allow Anyway</button>
+    </form>
+
+</div>
+
+</body>
+</html>

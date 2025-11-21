@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container fade-in">
+
+    {% if result.error %}
+        <div class="result-header danger shake">
+            ❌ Error Detected
+        </div>
+
+        <div class="alert alert-danger">
+            {{ result.error }}
+        </div>
+
+        <a href="/" class="btn-primary full-btn">🔄 Go Back</a>
+
+    {% else %}
+
+        {% if result.predicted_class.startswith("Benign") %}
+            <div class="result-header safe">
+                ✔ URL Appears Safe
+            </div>
+        {% elif result.predicted_class.startswith("Phishing") %}
+            <div class="result-header warning shake">
+                ⚠️ Phishing Suspected
+            </div>
+        {% elif result.predicted_class.startswith("Malware") %}
+            <div class="result-header danger shake">
+                🚨 Malware Threat Detected
+            </div>
+        {% else %}
+            <div class="result-header alert-default">
+                ⚠️ URL Analysis Completed
+            </div>
+        {% endif %}
+
+        <div class="alert alert-info">
+            <b>URL:</b> {{ result.url }} <br>
+            <b>Prediction:</b> {{ result.predicted_class }} <br>
+            <b>Confidence:</b> {{ (result.confidence * 100) | round(2) }}% <br>
+            <b>Severity:</b> {{ result.severity }} <br>
+            <b>Action:</b> {{ result.action_taken }}
+        </div>
+
+        {% if result.predicted_class in ["Phishing", "Malware", "Defacement"] %}
+            <a href="/confirm?url={{ result.url }}" class="btn-danger full-btn">🚫 Block URL</a>
+            <a href="/" class="btn-safe full-btn">✔ Allow Anyway</a>
+        {% else %}
+            <a href="/" class="btn-primary full-btn">🔄 Scan Another URL</a>
+        {% endif %}
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>

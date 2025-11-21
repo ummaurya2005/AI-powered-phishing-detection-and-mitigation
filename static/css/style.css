@@ -1,0 +1,284 @@
+/* ----------------------------------------------------
+   GLOBAL THEME — Cybersecurity Dark UI
+----------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0d1117, #161b22, #0a0f14);
+    background-size: 300% 300%;
+    animation: cyberBG 12s ease infinite;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+/* Animated Background */
+@keyframes cyberBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* ----------------------------------------------------
+   MAIN CONTAINER
+----------------------------------------------------- */
+.container {
+    width: 65%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 35px;
+    background: rgba(22, 27, 34, 0.92);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    border: 1px solid #30363d;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.45s ease-out;
+}
+
+
+/* ----------------------------------------------------
+   HEADINGS
+----------------------------------------------------- */
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #58a6ff;
+}
+
+h2 {
+    font-size: 26px;
+    color: #ffcc00;
+}
+
+h3 {
+    font-size: 20px;
+    color: #c9d1d9;
+}
+
+
+/* ----------------------------------------------------
+   FORM INPUTS
+----------------------------------------------------- */
+input[type="text"], input[type="url"], input[type="email"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin: 15px 0;
+    border: 1px solid #30363d;
+    background: #0d1117;
+    color: #e6e6e6;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #58a6ff;
+    box-shadow: 0 0 12px rgba(88,166,255,0.4);
+    outline: none;
+}
+
+
+/* ----------------------------------------------------
+   BUTTONS
+----------------------------------------------------- */
+button, .btn-primary, .btn-danger, .btn-safe {
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    margin-top: 12px;
+    transition: 0.25s ease-in-out;
+    display: inline-block;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+/* Primary (Blue/Green) */
+.btn-primary {
+    background: #238636;
+    color: white;
+}
+.btn-primary:hover {
+    background: #2ea043;
+}
+
+/* Danger (Red) */
+.btn-danger {
+    background: #d40000;
+    color: white;
+}
+.btn-danger:hover {
+    background: #b30000;
+}
+
+/* Safe (Green) */
+.btn-safe {
+    background: #00a348;
+    color: white;
+}
+.btn-safe:hover {
+    background: #008c32;
+}
+
+/* Full-width buttons (confirm page) */
+.full-btn {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    margin-top: 18px;
+}
+
+
+/* ----------------------------------------------------
+   RESULT HEADER STYLES
+----------------------------------------------------- */
+.result-header {
+    padding: 18px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Benign */
+.result-header.safe {
+    background: linear-gradient(135deg, #0f5132, #198754);
+    border-left: 6px solid #23ff97;
+    color: #d7ffe8;
+}
+
+/* Warning / Phishing */
+.result-header.warning {
+    background: linear-gradient(135deg, #7a6400, #c5a100);
+    border-left: 6px solid #ffcc00;
+    color: #fff8d5;
+}
+
+/* Danger / Malware */
+.result-header.danger {
+    background: linear-gradient(135deg, #610000, #c70000);
+    border-left: 6px solid #ff6a6a;
+    color: #ffe5e5;
+}
+
+/* General Info */
+.result-header.alert-default {
+    background: #113e5f;
+    border-left: 6px solid #58a6ff;
+    color: #cbe7ff;
+}
+
+
+/* ----------------------------------------------------
+   ALERT BOXES
+----------------------------------------------------- */
+.alert {
+    padding: 16px;
+    margin: 20px 0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.alert-info {
+    background: #1b2634;
+    border-left: 5px solid #58a6ff;
+}
+
+.alert-warning {
+    background: #3b2f00;
+    border-left: 6px solid #ffcc00;
+    color: #fff7c2;
+}
+
+.alert-danger {
+    background: #3a0d0d;
+    border-left: 6px solid #d40000;
+    color: #ffd4d4;
+}
+
+.alert-success {
+    background: #15341b;
+    border-left: 6px solid #00a348;
+    color: #d6ffe4;
+}
+
+
+/* ----------------------------------------------------
+   SHAKE ANIMATION FOR WARNINGS
+----------------------------------------------------- */
+.shake {
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-6px); }
+    50% { transform: translateX(6px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0px); }
+}
+
+
+/* ----------------------------------------------------
+   GENERAL FADE-IN
+----------------------------------------------------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ----------------------------------------------------
+   OPTIONAL TABLES
+----------------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #30363d;
+}
+
+th {
+    background: #21262d;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* ----------------------------------------------------
+   RESPONSIVE DESIGN
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    button, .full-btn {
+        width: 100%;
+    }
+
+    h1 { font-size: 26px; }
+    h2 { font-size: 22px; }
+}
