@@ -7,11 +7,24 @@ Includes **stacked ensemble models**, **heuristic filters**, **URL reputation AP
 ## 📸 Project Preview
 
 ### 🖼️ Phishing Awareness Images
-![Phishing Image](https://i.imgur.com/rFQKN5F.jpeg)
-![Malicious URL Example](https://i.imgur.com/qsM5JvF.jpeg)
-![Detection System Overview](https://i.imgur.com/49jnM3z.jpeg)
 
----
+## 📸 Project Preview
+
+### 🛡️ Phishing Attack Model
+![Phishing Attack](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Phishing_attack_diagram.svg/1280px-Phishing_attack_diagram.svg.png)
+
+### 🔐 Fake Login Page Example
+![Fake Login Page](https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Fake_Bank_of_America_login_screen.png/1280px-Fake_Bank_of_America_login_screen.png)
+
+### 🌐 URL Structure Used for Feature Engineering
+![URL Structure](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/URI_syntax_diagram.svg/1920px-URI_syntax_diagram.svg.png)
+
+### 🧠 AI Security & Detection
+![Cybersecurity Shield](https://images.unsplash.com/photo-1556155092-8707de31f9c4)
+
+### 🔒 Network Security Background
+![Network Security](https://images.unsplash.com/photo-1544197150-b99a580bb7a8)
+
 
 ## ⭐ Features
 
